@@ -273,7 +273,7 @@ fi
 # install curobo
 # =========================
 export GIT_LFS_SKIP_SMUDGE=1
-uv pip install nvidia_curobo@git+https://github.com/StanfordVL/curobo@cbaf7d32436160956dad190a9465360fad6aba73
+uv pip install --python "$(which_python)" --no-build-isolation --no-deps nvidia_curobo@git+https://github.com/StanfordVL/curobo@cbaf7d32436160956dad190a9465360fad6aba73
 
 # =========================
 # reinstall pyroki
